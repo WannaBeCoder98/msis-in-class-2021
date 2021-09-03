@@ -5,19 +5,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- CSS -->
+    <link href="css.css" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <title>Index</title>
+
+        <ul class="d-flex justify-content-center">
+            <li><a class="nav_links" href="index.html">Home</a></li>
+            <li><a class="nav_links" href="books.html">Books</a></li>
+        </ul>
+    <br>
+    <br>
+    <br>
   </head>
 
 
   <body>
-    <ul id="navigation_bar">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="books.html">Books</a></li>
-    </ul>
-
     <h1>List of Books</h1> <!-- Source: https://www.goodreads.com/list/show/1.Best_Books_Ever -->
     <table class="table table-striped">
         <thead>
@@ -80,8 +86,8 @@
         </tbody>
       </table>
 
+      <h2>Add a Book!</h2>
       <form>
-        <form>
             <label for="ID">ID</label><br>
             <input type="text" id="ID" name="book_id"><br>
             <label for="title">Title</label><br>
@@ -96,7 +102,6 @@
             <input type="text" id="page_count" name="book_page_count"><br>
             <label for="msrp">MSRP</label><br>
             <input type="text" id="msrp" name="book_msrp"><br>
-          </form>
       </form>
   </body>
 </html>
